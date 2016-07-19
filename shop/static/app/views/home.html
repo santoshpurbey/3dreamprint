@@ -1,4 +1,3 @@
-<h1>Hello this is home view</h1>
 <section id="showcase" class="">
   <div class="container-fluid">
     <div class="row" ng-controller="HomeController">
@@ -16,20 +15,16 @@
         </div>
       </div>
       <div class="col-sm-6 bg-shop" style="height:500px;">
-          <div class="half-box-right">
+        <productslider products="products"/>
+        <div class="slider" style="background:none;">
+          <div class="half-box-right slide" ng-repeat="product in products" ng-show="product.visible" >
               <div class="center-vertical">
                   <div class="center-vertical-box">
-                      <h1><b>See what's included</b></h1>
-                      <ul style="padding: 20px;">
-                        <li>Changeable lid color</li>
-                        <li>Changeable cup color</li>
-                        <li>Changeable cup label via smart object</li>
-                        <li>On/off shadows</li>
-                        <li>On/off specular</li>
-                        <li>Changeable background</li>
-                        <li>High resolution 3000 × 1875px</li>
-                      </ul>
-                      <a href="#" data-toggle="modal" data-target="#product-modal" class="btn dark"><b>$5</b> BUY NOW</a>
+                      <h1><b>{{product.title}}</b></h1>
+                      <p>{{product.content}}
+                        <div>
+                      <a href="#" data-toggle="modal" data-target="#product-modal" class="btn dark"><b>{{product.price}}</b> BUY NOW</a>
+                    </div>
                     </div>
               </div>
             </div>
