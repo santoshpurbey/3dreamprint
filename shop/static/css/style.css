@@ -1171,7 +1171,7 @@ blockquote,
 /*-----  End of Numbers  ------*/
 /*===================================
 =               Sliders             =
-===================================*/
+===================================
 .slider {
   background-color: #b6b6b6;
   height: 500px;
@@ -1249,7 +1249,7 @@ blockquote,
   line-height: 48px;
   /* position: absolute; */
   /* width: 100%; */
-  /* top: 10%; */
+  /* top: 10%;
 }
 .owl-theme .owl-controls .owl-nav .owl-next {
   top: 45%;
@@ -1260,7 +1260,7 @@ blockquote,
   left: 20px;
 }
 .owl-theme .owl-dots {
-  /*  margin-top: 55px;*/
+  /*  margin-top: 55px;
 }
 .owl-theme .owl-controls .owl-nav .disabled {
   opacity: 0.5;
@@ -1409,3 +1409,10 @@ turquoise
   background-color: #3498db;
 }
 /*-----  End of Colors  ------*/
+
+
+/**for custom product slider directiv */
+
+.custom-slider{
+  padding: 0px;
+}
