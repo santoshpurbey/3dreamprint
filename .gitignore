@@ -2,6 +2,7 @@
 db.sqlite3
 myenv
 py3env
+venv
 migrations
 media
 *.pyc
