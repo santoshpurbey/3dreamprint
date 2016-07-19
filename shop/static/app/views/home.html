@@ -1,0 +1,39 @@
+<h1>Hello this is home view</h1>
+<section id="showcase" class="">
+  <div class="container-fluid">
+    <div class="row" ng-controller="HomeController">
+      <div class="col-sm-6 custom-slider" style="padding: 0px">
+        <slider images="images"/>
+        <div class="slider">
+        	<div class="slide" ng-repeat="image in images" ng-show="image.visible">
+        		<img class="img-responsive" ng-src="static/app/img/{{image.src}}"/>
+        	</div>
+        	<div class="arrows">
+        		<a href="" ng-click="prev()">
+              <img src="static/app/img/left-arrow.png"/></a> <a href="" ng-click="next()">
+              <img src="static/app/img/right-arrow.png"/></a>
+        	</div>
+        </div>
+      </div>
+      <div class="col-sm-6 bg-shop" style="height:500px;">
+          <div class="half-box-right">
+              <div class="center-vertical">
+                  <div class="center-vertical-box">
+                      <h1><b>See what's included</b></h1>
+                      <ul style="padding: 20px;">
+                        <li>Changeable lid color</li>
+                        <li>Changeable cup color</li>
+                        <li>Changeable cup label via smart object</li>
+                        <li>On/off shadows</li>
+                        <li>On/off specular</li>
+                        <li>Changeable background</li>
+                        <li>High resolution 3000 × 1875px</li>
+                      </ul>
+                      <a href="#" data-toggle="modal" data-target="#product-modal" class="btn dark"><b>$5</b> BUY NOW</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>

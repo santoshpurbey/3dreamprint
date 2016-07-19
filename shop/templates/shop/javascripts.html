@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% compress js %}
+
 <!-- Core scrips -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -9,6 +10,10 @@
 <script type="text/javascript" src="{% static 'js/core.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/menu-overlay.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/placeholders.min.js' %}"></script>
+
+<!--TODO: investigate what modernizer does -->
+<!--script type="text/javascript" src="{% static 'js/modernizr.min.js' }"></script-->
+
 <!-- end core scripts -->
 <!-- sliders -->
 <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
@@ -18,15 +23,10 @@
 <script type="text/javascript" src="{% static 'js/numbers.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
 <!-- bower javascripts -->
-<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/material.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/ripples.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/underscore/underscore.js' %}"></script>
-
 <script type="text/javascript" src="{% static 'bower_components/angular/angular.js' %}"></script>
 <script type="text/javascript" src="{% static 'bower_components/angular-route/angular-route.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/angular-cookies/angular-cookies.js' %}"></script>
-
-
+<script type="text/javascript" src="{% static 'bower_components/angular-animate/angular-animate.js' %}"></script>
+<script type="text/javascript" src="{% static 'app/js/app.js' %}"></script>
+<script type="text/javascript" src="{% static 'app/js/controllers.js' %}"></script>
+<script type="text/javascript" src="{% static 'app/js/services.js' %}"></script>
 {% endcompress %}
