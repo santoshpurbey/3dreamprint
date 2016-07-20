@@ -12,8 +12,9 @@ staticfiles
 *.csv
 
 .env*
-settings_local.py
-settings_production.py
+myshop/settings/dev.py
+myshop/settings/production.py
+
 post-double.py
 labels
 # Byte-compiled / optimized / DLL files
