@@ -13,14 +13,16 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from celery import Celery
-from django.core.exceptions import ImproperlyConfigured
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
+# SECURITY WARNING: keep the secret key used in production secret!
+# configurations for os.environ secret key
 
+with open('/etc/statume_secret_key.txt') as f:
+    SECRET_KEY = f.read().strip()
 
 # Application definition
 
