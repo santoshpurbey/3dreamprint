@@ -21,8 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 # configurations for os.environ secret key
 
-with open('/etc/statume_secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '$6(x*g_2g9l_*g8peb-@anl5^*8q!1w)k&e&2!i)t6$s8kia94'
+
+ALLOWED_HOSTS = []
+DEBUG = True
 
 # Application definition
 
@@ -76,6 +80,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
 
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
