@@ -1,8 +1,9 @@
-from django.conf.urls import url
+from django.conf.urls import *
+from django.views.generic import TemplateView
+from rest_framework import routers
 from . import views
+from .views import IndexView
 
-urlpatterns = [
-    url(r'^$', views.product_list, name='product_list'),
-    url(r'^(?P<category_slug>[-\w]+)/$', views.product_list, name='product_list_by_category'),
-    url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)/$', views.product_detail, name='product_detail'),
-]
+urlpatterns = patterns('',
+        url('^.*$', IndexView.as_view(), name='index'),
+)

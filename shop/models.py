@@ -26,7 +26,6 @@ class Category(models.Model):
     def get_absolute_url(self):
         return reverse('shop:product_list_by_category', args=[self.slug])
 
-
 class Product(models.Model):
     category = models.ForeignKey(Category, related_name='products')
     name = models.CharField(max_length=200, db_index=True)
