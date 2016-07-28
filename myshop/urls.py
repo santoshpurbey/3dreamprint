@@ -12,8 +12,9 @@ router.register(prefix='products', viewset=ProductViewSet)
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
+
     # maintenance mode for production
-    url(r'^', include('comingsoon.urls', namespace='comingsoon')),
+    url(r'^soon', include('comingsoon.urls', namespace='comingsoon')),
 #    url(r'^api/', include(router.urls)),
 #    url(r'^cart/', include('cart.urls', namespace='cart')),
 #    url(r'^payment/', include('payment.urls', namespace='payment')),
