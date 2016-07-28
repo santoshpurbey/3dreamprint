@@ -45,7 +45,7 @@ INSTALLED_APPS = (
     'paypal.standard.ipn',
     'payment',
     'ckeditor',
-
+    'comingsoon',
 )
 
 MIDDLEWARE_CLASSES = (
