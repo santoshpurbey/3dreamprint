@@ -75,5 +75,3 @@ docs/_build/
 target/
 
 # basic django configuration files
-manage.py
-myshop/wsgi.py
