@@ -15,12 +15,12 @@ urlpatterns = patterns('',
 
     # maintenance mode for production
     url(r'^soon', include('comingsoon.urls', namespace='comingsoon')),
-#    url(r'^api/', include(router.urls)),
-#    url(r'^cart/', include('cart.urls', namespace='cart')),
-#    url(r'^payment/', include('payment.urls', namespace='payment')),
-#    url(r'^orders/', include('orders.urls', namespace='orders')),
-#    url(r'^paypal/', include('paypal.standard.ipn.urls')),
-#    url(r'^', include('shop.urls', namespace='shop')),
+    url(r'^api/', include(router.urls)),
+    url(r'^cart/', include('cart.urls', namespace='cart')),
+    url(r'^payment/', include('payment.urls', namespace='payment')),
+    url(r'^orders/', include('orders.urls', namespace='orders')),
+    url(r'^paypal/', include('paypal.standard.ipn.urls')),
+    url(r'^', include('shop.urls', namespace='shop')),
 
     ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
